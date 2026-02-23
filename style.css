@@ -1,0 +1,92 @@
+body{
+margin:0;
+font-family:Arial;
+background:#f4f6f9;
+}
+
+.app{
+max-width:420px;
+margin:auto;
+background:white;
+min-height:100vh;
+box-shadow:0 0 20px rgba(0,0,0,0.1);
+}
+
+.topbar{
+background:#1e3c72;
+background:linear-gradient(45deg,#1e3c72,#2a5298);
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.saldo-card{
+margin:15px;
+padding:20px;
+border-radius:15px;
+background:linear-gradient(45deg,#11998e,#38ef7d);
+color:white;
+text-align:center;
+}
+
+.saldo-card h1{
+margin:5px 0 0 0;
+font-size:28px;
+}
+
+.menu{
+display:flex;
+justify-content:space-around;
+padding:10px;
+}
+
+.btn{
+padding:10px;
+border:none;
+border-radius:10px;
+color:white;
+font-weight:bold;
+width:30%;
+}
+
+.green{background:#28a745;}
+.red{background:#dc3545;}
+.blue{background:#007bff;}
+
+#formArea{
+padding:15px;
+}
+
+#formArea input{
+width:100%;
+padding:10px;
+margin:5px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.history{
+padding:15px;
+}
+
+.item{
+background:#f8f9fa;
+padding:10px;
+margin:5px 0;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.item span{
+font-size:13px;
+}
+
+.delete{
+background:red;
+color:white;
+border:none;
+border-radius:5px;
+padding:5px;
+}

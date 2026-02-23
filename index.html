@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Keuangan Android</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+<div class="topbar">
+<h2>KEUANGAN</h2>
+</div>
+
+<div class="saldo-card">
+<p>Saldo Saat Ini</p>
+<h1 id="saldo">Rp 0</h1>
+</div>
+
+<div class="menu">
+<button onclick="showForm('masuk')" class="btn green">+ Pemasukan</button>
+<button onclick="showForm('keluar')" class="btn red">- Pengeluaran</button>
+<button onclick="exportData()" class="btn blue">Export</button>
+</div>
+
+<div id="formArea"></div>
+
+<div class="history">
+<h3>Riwayat Transaksi</h3>
+<div id="list"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
