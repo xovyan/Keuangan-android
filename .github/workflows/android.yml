@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/upload-artifact@v4
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
@@ -26,11 +26,13 @@ jobs:
           cd myapp
           cordova platform add android
           rm -rf www/*
-          cp -r ../* www/
+          cp -r ../index.html www/
+          cp -r ../style.css www/
+          cp -r ../script.js www/
           cordova build android
 
       - name: Upload APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: keuangan-apk
           path: myapp/platforms/android/app/build/outputs/apk/debug/app-debug.apk
